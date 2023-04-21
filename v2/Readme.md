@@ -1,4 +1,4 @@
-This is a ensemble virson,
+This is a ensemble virson, the main running file is `clustering.py`.
 
 You can run each method through shell like:
 

@@ -1,0 +1,26 @@
+Kmeans:
+
+GMM:
+  covariance_type: 'tied'
+HierarchicalClustering:
+  affinity: 'euclidean'
+  linkage: 'average'
+CFSFDP:
+  nn_k: 30
+SOM:
+  sigma: 0.4
+  learning_rate: 0.5
+  neighborhood_function: 'gaussian'
+  topology: rectangular
+  activation_distance: euclidean
+  random_seed: 0
+KmeansDP:
+  nn_k: 30
+Kmedoids:
+
+DBSCAN:
+  eps: 0.5
+  min_samples: 5
+  metric: euclidean
+  leaf_size: 30
+  n_jobs: 5

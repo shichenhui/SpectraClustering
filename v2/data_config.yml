@@ -1,0 +1,108 @@
+# test yml
+
+Diff_Size_1:
+  note: different datasize--8000
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_size_2000*4.csv'
+  data_type: spectra
+  classes:
+    A: 2000
+    F: 2000
+    G: 2000
+    K: 2000
+  snr: '>10'
+
+Diff_Size_2:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: different datasize--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_size_5000*4.csv'
+  data_type: spectra
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '>10'
+
+Diff_Size_3:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: different datasize--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_size_20000*4.csv'
+  data_type: spectra
+  classes:
+    A: 20000
+    F: 20000
+    G: 20000
+    K: 20000
+  snr: '>10'
+
+Diff_SNR_h:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: high snr--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_snr_h.csv'
+  data_type: spectra
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '>30'
+
+Diff_SNR_m:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: medium snr--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_snr_m.csv'
+  data_type: spectra
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '10-30'
+
+Diff_SNR_l:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: low snr--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_snr_l.csv'
+  data_type: spectra
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '<10'
+
+SGQ:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: star, galaxy, quasar, with remove redshift
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/sgq.csv'
+  data_type: spectra
+  classes:
+    STAR: 10000
+    GALAXY: 10000
+    QSO: 10000
+
+
+Diff_Feature_1Dspectra:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: different datasize--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_feature_1Dspectra.csv'
+  data_type: spectra
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '>10'
+Diff_Feature_LineIndex:
+  fits_path: '/home/shichenhui/code/data/spectra_gb_greater_45'
+  note: different datasize--8000
+  save_filename: '/home/shichenhui/code/data/data_process/constract_dataset/diff_feature_LineIndex.csv'
+  data_type: line_index
+  classes:
+    A: 5000
+    F: 5000
+    G: 5000
+    K: 5000
+  snr: '>10'
+

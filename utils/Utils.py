@@ -10,7 +10,7 @@ from astropy.io import fits
 
 def read_line_index(fits_path):
     """
-    计算一条光谱的线指数
+    计算一条光谱的线指数，参考文章OLD STELLAR POPULATIONS. V. ABSORPTION FEATURE INDICES FOR THE COMPLETE LICK/IDS SAMPLE OF STARS1
     :param flux: 光谱的流量向量
     :param wave: 光谱的波长向量
     :return: 线指数, np.array类型
@@ -59,6 +59,7 @@ def read_line_index(fits_path):
         # 计算连续谱直线,通过两个点画直线
         y_left = np.trapz(left_flux, left_band) / (left_band[-1] - left_band[0])
         y_right = np.trapz(right_flux, right_band) / (right_band[-1] - right_band[0])
+        # 用中值还是均值？需要看一下文章
         x_left = np.mean(left_band)
         x_right = np.mean(right_band)
         # y = kx + b
